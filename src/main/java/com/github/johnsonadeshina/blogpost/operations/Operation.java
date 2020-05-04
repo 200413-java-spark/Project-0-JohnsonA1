@@ -55,6 +55,9 @@ public class Operation {
             else if(next.equals("read from database")) {
                 SQLBlogRepo.ReadAll();
             }
+            else if(next.equals("http")) {
+                SQLBlogRepo.ReadAll();
+            }
             else if(next.equals("exit")) {}
             else {
                 System.out.println("Command not recognized. Use 'help' for command list.");
@@ -68,12 +71,11 @@ public class Operation {
     public static void help() {
         System.out.println("'add' : Add a new agenda item by following prompts.");
         System.out.println("'show all items' : Print all items currently saved in blog post");
-        System.out.println("'exit' : Quit and exit program.");
-        System.out.println("--------IO--------");
         System.out.println("read from file");
         System.out.println("write to file");
         System.out.println("read from database");
         System.out.println("write to database");
+        System.out.println("'exit' : Quit and exit program.");
     }
 
 
