@@ -3,6 +3,7 @@ package com.github.johnsonadeshina.blogpost.operations;
 import com.github.johnsonadeshina.blogpost.entries.Blog;
 import com.github.johnsonadeshina.blogpost.io.IO;
 import com.github.johnsonadeshina.blogpost.io.SQLBlogRepo;
+import com.github.johnsonadeshina.blogpost.server.HttpServer;
 
 
 import java.util.LinkedList;
@@ -56,7 +57,9 @@ public class Operation {
                 SQLBlogRepo.ReadAll();
             }
             else if(next.equals("http")) {
-                SQLBlogRepo.ReadAll();
+                HttpServer server = new HttpServer();
+                System.out.println("Running http server on port 8080");
+                server.listen();
             }
             else if(next.equals("exit")) {}
             else {
@@ -75,6 +78,7 @@ public class Operation {
         System.out.println("write to file");
         System.out.println("read from database");
         System.out.println("write to database");
+        System.out.println("'http' to connect to the Http server");
         System.out.println("'exit' : Quit and exit program.");
     }
 
