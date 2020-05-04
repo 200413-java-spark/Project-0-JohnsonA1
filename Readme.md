@@ -5,7 +5,7 @@
 - mvn clean compile
 
 ### Usage
-- mvn exec:java -Dexec.args-"[operands]"
+- mvn exec:java -Dexec.args-"[operators]"
 
 Usage
 To run program use ./run.sh
