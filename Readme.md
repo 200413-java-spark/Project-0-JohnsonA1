@@ -26,7 +26,7 @@ BlogOpsRepo inserts and selects data from a sql database
 
 The main class will display a menu and ask the user to type a string from the selections
 That input will be store and passed into the main loop
-"'add' : Add a new agenda item by following prompts."
+"'add' : Add a new blog entry by following the prompts."
 "'show all items' : Print all items currently saved in blog post"
 "read from file"
 "write to file"
